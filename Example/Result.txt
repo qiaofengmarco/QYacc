@@ -1,0 +1,1046 @@
+Line 1:
+type_specifier : UNSIGNED
+type_specifier : INT
+declaration_specifiers : type_specifier
+declaration_specifiers : type_specifier declaration_specifiers
+direct_declarator : IDENTIFIER
+declarator : direct_declarator
+primary_expression : CONSTANT
+postfix_expression : primary_expression
+unary_expression : postfix_expression
+cast_expression : unary_expression
+multiplicative_expression : cast_expression
+additive_expression : multiplicative_expression
+shift_expression : additive_expression
+relational_expression : shift_expression
+equality_expression : relational_expression
+and_expression : equality_expression
+exclusive_or_expression : and_expression
+inclusive_or_expression : exclusive_or_expression
+logical_and_expression : inclusive_or_expression
+logical_or_expression : logical_and_expression
+conditional_expression : logical_or_expression
+assignment_expression : conditional_expression
+initializer : assignment_expression
+init_declarator : declarator '=' initializer
+init_declarator_list : init_declarator
+Line  2:
+declaration : declaration_specifiers init_declarator_list ';'
+external_declaration : declaration
+translation_unit : external_declaration
+type_specifier : CHAR
+declaration_specifiers : type_specifier
+pointer : '*'
+direct_declarator : IDENTIFIER
+declarator : pointer direct_declarator
+init_declarator : declarator
+init_declarator_list : init_declarator
+Line  3:
+declaration : declaration_specifiers init_declarator_list ';'
+external_declaration : declaration
+translation_unit : translation_unit external_declaration
+type_specifier : INT
+declaration_specifiers : type_specifier
+direct_declarator : IDENTIFIER
+declarator : direct_declarator
+primary_expression : CONSTANT
+postfix_expression : primary_expression
+unary_expression : postfix_expression
+cast_expression : unary_expression
+multiplicative_expression : cast_expression
+additive_expression : multiplicative_expression
+shift_expression : additive_expression
+relational_expression : shift_expression
+equality_expression : relational_expression
+and_expression : equality_expression
+exclusive_or_expression : and_expression
+inclusive_or_expression : exclusive_or_expression
+logical_and_expression : inclusive_or_expression
+logical_or_expression : logical_and_expression
+conditional_expression : logical_or_expression
+assignment_expression : conditional_expression
+initializer : assignment_expression
+init_declarator : declarator '=' initializer
+init_declarator_list : init_declarator
+Line  4:
+declaration : declaration_specifiers init_declarator_list ';'
+external_declaration : declaration
+translation_unit : translation_unit external_declaration
+type_specifier : VOID
+declaration_specifiers : type_specifier
+direct_declarator : IDENTIFIER
+type_specifier : CHAR
+declaration_specifiers : type_specifier
+pointer : '*'
+pointer : '*' pointer
+direct_declarator : IDENTIFIER
+declarator : pointer direct_declarator
+parameter_declaration : declaration_specifiers declarator
+parameter_list : parameter_declaration
+type_qualifier : CONST
+type_specifier : CHAR
+declaration_specifiers : type_specifier
+declaration_specifiers : type_qualifier declaration_specifiers
+direct_declarator : IDENTIFIER
+declarator : direct_declarator
+parameter_declaration : declaration_specifiers declarator
+parameter_list : parameter_list ',' parameter_declaration
+parameter_type_list : parameter_list
+Line  5:
+direct_declarator : direct_declarator '(' parameter_type_list ')'
+declarator : direct_declarator
+Line  6:
+primary_expression : IDENTIFIER
+postfix_expression : primary_expression
+unary_expression : postfix_expression
+cast_expression : unary_expression
+multiplicative_expression : cast_expression
+additive_expression : multiplicative_expression
+shift_expression : additive_expression
+relational_expression : shift_expression
+primary_expression : IDENTIFIER
+postfix_expression : primary_expression
+unary_expression : postfix_expression
+cast_expression : unary_expression
+multiplicative_expression : cast_expression
+additive_expression : multiplicative_expression
+primary_expression : CONSTANT
+postfix_expression : primary_expression
+unary_expression : postfix_expression
+cast_expression : unary_expression
+multiplicative_expression : cast_expression
+additive_expression : additive_expression '+' multiplicative_expression
+shift_expression : additive_expression
+relational_expression : relational_expression '<' shift_expression
+equality_expression : relational_expression
+and_expression : equality_expression
+exclusive_or_expression : and_expression
+inclusive_or_expression : exclusive_or_expression
+logical_and_expression : inclusive_or_expression
+logical_or_expression : logical_and_expression
+conditional_expression : logical_or_expression
+assignment_expression : conditional_expression
+expression : assignment_expression
+Line  7:
+Line  8:
+primary_expression : IDENTIFIER
+postfix_expression : primary_expression
+unary_expression : postfix_expression
+assignment_operator : ADD_ASSIGN
+primary_expression : CONSTANT
+postfix_expression : primary_expression
+unary_expression : postfix_expression
+cast_expression : unary_expression
+multiplicative_expression : cast_expression
+additive_expression : multiplicative_expression
+shift_expression : additive_expression
+relational_expression : shift_expression
+equality_expression : relational_expression
+and_expression : equality_expression
+exclusive_or_expression : and_expression
+inclusive_or_expression : exclusive_or_expression
+logical_and_expression : inclusive_or_expression
+logical_or_expression : logical_and_expression
+conditional_expression : logical_or_expression
+assignment_expression : conditional_expression
+assignment_expression : unary_expression assignment_operator assignment_expression
+expression : assignment_expression
+Line  9:
+expression_statement : expression ';'
+statement : expression_statement
+statement_list : statement
+primary_expression : IDENTIFIER
+postfix_expression : primary_expression
+unary_expression : postfix_expression
+cast_expression : unary_expression
+multiplicative_expression : cast_expression
+additive_expression : multiplicative_expression
+shift_expression : additive_expression
+relational_expression : shift_expression
+equality_expression : relational_expression
+primary_expression : IDENTIFIER
+postfix_expression : primary_expression
+unary_expression : postfix_expression
+cast_expression : unary_expression
+multiplicative_expression : cast_expression
+additive_expression : multiplicative_expression
+shift_expression : additive_expression
+relational_expression : shift_expression
+equality_expression : equality_expression NE_OP relational_expression
+and_expression : equality_expression
+exclusive_or_expression : and_expression
+inclusive_or_expression : exclusive_or_expression
+logical_and_expression : inclusive_or_expression
+logical_or_expression : logical_and_expression
+conditional_expression : logical_or_expression
+assignment_expression : conditional_expression
+expression : assignment_expression
+Line 10:
+Line 11:
+primary_expression : IDENTIFIER
+postfix_expression : primary_expression
+primary_expression : IDENTIFIER
+postfix_expression : primary_expression
+unary_expression : postfix_expression
+cast_expression : unary_expression
+multiplicative_expression : cast_expression
+additive_expression : multiplicative_expression
+shift_expression : additive_expression
+relational_expression : shift_expression
+equality_expression : relational_expression
+and_expression : equality_expression
+exclusive_or_expression : and_expression
+inclusive_or_expression : exclusive_or_expression
+logical_and_expression : inclusive_or_expression
+logical_or_expression : logical_and_expression
+conditional_expression : logical_or_expression
+assignment_expression : conditional_expression
+argument_expression_list : assignment_expression
+postfix_expression : postfix_expression '(' argument_expression_list ')'
+unary_expression : postfix_expression
+cast_expression : unary_expression
+multiplicative_expression : cast_expression
+additive_expression : multiplicative_expression
+shift_expression : additive_expression
+relational_expression : shift_expression
+equality_expression : relational_expression
+and_expression : equality_expression
+exclusive_or_expression : and_expression
+inclusive_or_expression : exclusive_or_expression
+logical_and_expression : inclusive_or_expression
+logical_or_expression : logical_and_expression
+conditional_expression : logical_or_expression
+assignment_expression : conditional_expression
+expression : assignment_expression
+Line 12:
+expression_statement : expression ';'
+statement : expression_statement
+statement_list : statement
+primary_expression : IDENTIFIER
+postfix_expression : primary_expression
+unary_expression : postfix_expression
+assignment_operator : '='
+primary_expression : IDENTIFIER
+postfix_expression : primary_expression
+unary_expression : postfix_expression
+cast_expression : unary_expression
+multiplicative_expression : cast_expression
+additive_expression : multiplicative_expression
+shift_expression : additive_expression
+relational_expression : shift_expression
+equality_expression : relational_expression
+and_expression : equality_expression
+exclusive_or_expression : and_expression
+inclusive_or_expression : exclusive_or_expression
+logical_and_expression : inclusive_or_expression
+logical_or_expression : logical_and_expression
+conditional_expression : logical_or_expression
+assignment_expression : conditional_expression
+assignment_expression : unary_expression assignment_operator assignment_expression
+expression : assignment_expression
+Line 13:
+expression_statement : expression ';'
+statement : expression_statement
+statement_list : statement_list statement
+Line 14:
+compound_statement : '{' statement_list '}'
+statement : compound_statement
+selection_statement : IF '(' expression ')' statement
+statement : selection_statement
+statement_list : statement_list statement
+primary_expression : IDENTIFIER
+postfix_expression : primary_expression
+unary_expression : postfix_expression
+assignment_operator : '='
+type_specifier : CHAR
+specifier_qualifier_list : type_specifier
+pointer : '*'
+abstract_declarator : pointer
+type_name : specifier_qualifier_list abstract_declarator
+primary_expression : IDENTIFIER
+postfix_expression : primary_expression
+type_specifier : CHAR
+specifier_qualifier_list : type_specifier
+type_name : specifier_qualifier_list
+unary_expression : SIZEOF '(' type_name ')'
+cast_expression : unary_expression
+multiplicative_expression : cast_expression
+primary_expression : IDENTIFIER
+postfix_expression : primary_expression
+unary_expression : postfix_expression
+cast_expression : unary_expression
+multiplicative_expression : multiplicative_expression '*' cast_expression
+additive_expression : multiplicative_expression
+shift_expression : additive_expression
+relational_expression : shift_expression
+equality_expression : relational_expression
+and_expression : equality_expression
+exclusive_or_expression : and_expression
+inclusive_or_expression : exclusive_or_expression
+logical_and_expression : inclusive_or_expression
+logical_or_expression : logical_and_expression
+conditional_expression : logical_or_expression
+assignment_expression : conditional_expression
+argument_expression_list : assignment_expression
+postfix_expression : postfix_expression '(' argument_expression_list ')'
+unary_expression : postfix_expression
+cast_expression : unary_expression
+cast_expression : '(' type_name ')' cast_expression
+multiplicative_expression : cast_expression
+additive_expression : multiplicative_expression
+shift_expression : additive_expression
+relational_expression : shift_expression
+equality_expression : relational_expression
+and_expression : equality_expression
+exclusive_or_expression : and_expression
+inclusive_or_expression : exclusive_or_expression
+logical_and_expression : inclusive_or_expression
+logical_or_expression : logical_and_expression
+conditional_expression : logical_or_expression
+assignment_expression : conditional_expression
+assignment_expression : unary_expression assignment_operator assignment_expression
+expression : assignment_expression
+Line 15:
+expression_statement : expression ';'
+statement : expression_statement
+statement_list : statement_list statement
+primary_expression : IDENTIFIER
+postfix_expression : primary_expression
+primary_expression : IDENTIFIER
+postfix_expression : primary_expression
+unary_expression : postfix_expression
+cast_expression : unary_expression
+multiplicative_expression : cast_expression
+additive_expression : multiplicative_expression
+shift_expression : additive_expression
+relational_expression : shift_expression
+equality_expression : relational_expression
+and_expression : equality_expression
+exclusive_or_expression : and_expression
+inclusive_or_expression : exclusive_or_expression
+logical_and_expression : inclusive_or_expression
+logical_or_expression : logical_and_expression
+conditional_expression : logical_or_expression
+assignment_expression : conditional_expression
+argument_expression_list : assignment_expression
+unary_operator : '*'
+primary_expression : IDENTIFIER
+postfix_expression : primary_expression
+unary_expression : postfix_expression
+cast_expression : unary_expression
+unary_expression : unary_operator cast_expression
+cast_expression : unary_expression
+multiplicative_expression : cast_expression
+additive_expression : multiplicative_expression
+shift_expression : additive_expression
+relational_expression : shift_expression
+equality_expression : relational_expression
+and_expression : equality_expression
+exclusive_or_expression : and_expression
+inclusive_or_expression : exclusive_or_expression
+logical_and_expression : inclusive_or_expression
+logical_or_expression : logical_and_expression
+conditional_expression : logical_or_expression
+assignment_expression : conditional_expression
+argument_expression_list : argument_expression_list ',' assignment_expression
+postfix_expression : postfix_expression '(' argument_expression_list ')'
+unary_expression : postfix_expression
+cast_expression : unary_expression
+multiplicative_expression : cast_expression
+additive_expression : multiplicative_expression
+shift_expression : additive_expression
+relational_expression : shift_expression
+equality_expression : relational_expression
+and_expression : equality_expression
+exclusive_or_expression : and_expression
+inclusive_or_expression : exclusive_or_expression
+logical_and_expression : inclusive_or_expression
+logical_or_expression : logical_and_expression
+conditional_expression : logical_or_expression
+assignment_expression : conditional_expression
+expression : assignment_expression
+Line 16:
+expression_statement : expression ';'
+statement : expression_statement
+statement_list : statement_list statement
+primary_expression : IDENTIFIER
+postfix_expression : primary_expression
+unary_operator : '*'
+primary_expression : IDENTIFIER
+postfix_expression : primary_expression
+unary_expression : postfix_expression
+cast_expression : unary_expression
+unary_expression : unary_operator cast_expression
+cast_expression : unary_expression
+multiplicative_expression : cast_expression
+additive_expression : multiplicative_expression
+shift_expression : additive_expression
+relational_expression : shift_expression
+equality_expression : relational_expression
+and_expression : equality_expression
+exclusive_or_expression : and_expression
+inclusive_or_expression : exclusive_or_expression
+logical_and_expression : inclusive_or_expression
+logical_or_expression : logical_and_expression
+conditional_expression : logical_or_expression
+assignment_expression : conditional_expression
+argument_expression_list : assignment_expression
+postfix_expression : postfix_expression '(' argument_expression_list ')'
+unary_expression : postfix_expression
+cast_expression : unary_expression
+multiplicative_expression : cast_expression
+additive_expression : multiplicative_expression
+shift_expression : additive_expression
+relational_expression : shift_expression
+equality_expression : relational_expression
+and_expression : equality_expression
+exclusive_or_expression : and_expression
+inclusive_or_expression : exclusive_or_expression
+logical_and_expression : inclusive_or_expression
+logical_or_expression : logical_and_expression
+conditional_expression : logical_or_expression
+assignment_expression : conditional_expression
+expression : assignment_expression
+Line 17:
+expression_statement : expression ';'
+statement : expression_statement
+statement_list : statement_list statement
+unary_operator : '*'
+primary_expression : IDENTIFIER
+postfix_expression : primary_expression
+unary_expression : postfix_expression
+cast_expression : unary_expression
+unary_expression : unary_operator cast_expression
+assignment_operator : '='
+primary_expression : IDENTIFIER
+postfix_expression : primary_expression
+unary_expression : postfix_expression
+cast_expression : unary_expression
+multiplicative_expression : cast_expression
+additive_expression : multiplicative_expression
+shift_expression : additive_expression
+relational_expression : shift_expression
+equality_expression : relational_expression
+and_expression : equality_expression
+exclusive_or_expression : and_expression
+inclusive_or_expression : exclusive_or_expression
+logical_and_expression : inclusive_or_expression
+logical_or_expression : logical_and_expression
+conditional_expression : logical_or_expression
+assignment_expression : conditional_expression
+assignment_expression : unary_expression assignment_operator assignment_expression
+expression : assignment_expression
+Line 18:
+expression_statement : expression ';'
+statement : expression_statement
+statement_list : statement_list statement
+Line 19:
+compound_statement : '{' statement_list '}'
+statement : compound_statement
+selection_statement : IF '(' expression ')' statement
+statement : selection_statement
+statement_list : statement
+unary_operator : '*'
+primary_expression : IDENTIFIER
+postfix_expression : primary_expression
+unary_expression : postfix_expression
+cast_expression : unary_expression
+unary_expression : unary_operator cast_expression
+cast_expression : unary_expression
+multiplicative_expression : cast_expression
+additive_expression : multiplicative_expression
+shift_expression : additive_expression
+relational_expression : shift_expression
+equality_expression : relational_expression
+and_expression : equality_expression
+exclusive_or_expression : and_expression
+inclusive_or_expression : exclusive_or_expression
+logical_and_expression : inclusive_or_expression
+logical_or_expression : logical_and_expression
+conditional_expression : logical_or_expression
+assignment_expression : conditional_expression
+expression : assignment_expression
+primary_expression : '(' expression ')'
+postfix_expression : primary_expression
+primary_expression : IDENTIFIER
+postfix_expression : primary_expression
+postfix_expression : postfix_expression INC_OP
+unary_expression : postfix_expression
+cast_expression : unary_expression
+multiplicative_expression : cast_expression
+additive_expression : multiplicative_expression
+shift_expression : additive_expression
+relational_expression : shift_expression
+equality_expression : relational_expression
+and_expression : equality_expression
+exclusive_or_expression : and_expression
+inclusive_or_expression : exclusive_or_expression
+logical_and_expression : inclusive_or_expression
+logical_or_expression : logical_and_expression
+conditional_expression : logical_or_expression
+assignment_expression : conditional_expression
+expression : assignment_expression
+postfix_expression : postfix_expression '[' expression ']'
+unary_expression : postfix_expression
+assignment_operator : '='
+primary_expression : IDENTIFIER
+postfix_expression : primary_expression
+unary_expression : postfix_expression
+cast_expression : unary_expression
+multiplicative_expression : cast_expression
+additive_expression : multiplicative_expression
+shift_expression : additive_expression
+relational_expression : shift_expression
+equality_expression : relational_expression
+and_expression : equality_expression
+exclusive_or_expression : and_expression
+inclusive_or_expression : exclusive_or_expression
+logical_and_expression : inclusive_or_expression
+logical_or_expression : logical_and_expression
+conditional_expression : logical_or_expression
+assignment_expression : conditional_expression
+assignment_expression : unary_expression assignment_operator assignment_expression
+expression : assignment_expression
+Line 20:
+expression_statement : expression ';'
+statement : expression_statement
+statement_list : statement_list statement
+unary_operator : '*'
+primary_expression : IDENTIFIER
+postfix_expression : primary_expression
+unary_expression : postfix_expression
+cast_expression : unary_expression
+unary_expression : unary_operator cast_expression
+cast_expression : unary_expression
+multiplicative_expression : cast_expression
+additive_expression : multiplicative_expression
+shift_expression : additive_expression
+relational_expression : shift_expression
+equality_expression : relational_expression
+and_expression : equality_expression
+exclusive_or_expression : and_expression
+inclusive_or_expression : exclusive_or_expression
+logical_and_expression : inclusive_or_expression
+logical_or_expression : logical_and_expression
+conditional_expression : logical_or_expression
+assignment_expression : conditional_expression
+expression : assignment_expression
+primary_expression : '(' expression ')'
+postfix_expression : primary_expression
+primary_expression : IDENTIFIER
+postfix_expression : primary_expression
+unary_expression : postfix_expression
+cast_expression : unary_expression
+multiplicative_expression : cast_expression
+additive_expression : multiplicative_expression
+shift_expression : additive_expression
+relational_expression : shift_expression
+equality_expression : relational_expression
+and_expression : equality_expression
+exclusive_or_expression : and_expression
+inclusive_or_expression : exclusive_or_expression
+logical_and_expression : inclusive_or_expression
+logical_or_expression : logical_and_expression
+conditional_expression : logical_or_expression
+assignment_expression : conditional_expression
+expression : assignment_expression
+postfix_expression : postfix_expression '[' expression ']'
+unary_expression : postfix_expression
+assignment_operator : '='
+primary_expression : CONSTANT
+postfix_expression : primary_expression
+unary_expression : postfix_expression
+cast_expression : unary_expression
+multiplicative_expression : cast_expression
+additive_expression : multiplicative_expression
+shift_expression : additive_expression
+relational_expression : shift_expression
+equality_expression : relational_expression
+and_expression : equality_expression
+exclusive_or_expression : and_expression
+inclusive_or_expression : exclusive_or_expression
+logical_and_expression : inclusive_or_expression
+logical_or_expression : logical_and_expression
+conditional_expression : logical_or_expression
+assignment_expression : conditional_expression
+assignment_expression : unary_expression assignment_operator assignment_expression
+expression : assignment_expression
+Line 21:
+expression_statement : expression ';'
+statement : expression_statement
+statement_list : statement_list statement
+Line 22:
+compound_statement : '{' statement_list '}'
+function_definition : declaration_specifiers declarator compound_statement
+external_declaration : function_definition
+translation_unit : translation_unit external_declaration
+type_specifier : INT
+declaration_specifiers : type_specifier
+direct_declarator : IDENTIFIER
+Line 23:
+direct_declarator : direct_declarator '(' ')'
+declarator : direct_declarator
+Line 24:
+type_specifier : CHAR
+declaration_specifiers : type_specifier
+pointer : '*'
+direct_declarator : IDENTIFIER
+declarator : pointer direct_declarator
+type_specifier : CHAR
+specifier_qualifier_list : type_specifier
+pointer : '*'
+abstract_declarator : pointer
+type_name : specifier_qualifier_list abstract_declarator
+primary_expression : IDENTIFIER
+postfix_expression : primary_expression
+primary_expression : IDENTIFIER
+postfix_expression : primary_expression
+unary_expression : postfix_expression
+cast_expression : unary_expression
+multiplicative_expression : cast_expression
+additive_expression : multiplicative_expression
+shift_expression : additive_expression
+relational_expression : shift_expression
+equality_expression : relational_expression
+and_expression : equality_expression
+exclusive_or_expression : and_expression
+inclusive_or_expression : exclusive_or_expression
+logical_and_expression : inclusive_or_expression
+logical_or_expression : logical_and_expression
+conditional_expression : logical_or_expression
+assignment_expression : conditional_expression
+argument_expression_list : assignment_expression
+type_specifier : CHAR
+specifier_qualifier_list : type_specifier
+type_name : specifier_qualifier_list
+unary_expression : SIZEOF '(' type_name ')'
+cast_expression : unary_expression
+multiplicative_expression : cast_expression
+additive_expression : multiplicative_expression
+shift_expression : additive_expression
+relational_expression : shift_expression
+equality_expression : relational_expression
+and_expression : equality_expression
+exclusive_or_expression : and_expression
+inclusive_or_expression : exclusive_or_expression
+logical_and_expression : inclusive_or_expression
+logical_or_expression : logical_and_expression
+conditional_expression : logical_or_expression
+assignment_expression : conditional_expression
+argument_expression_list : argument_expression_list ',' assignment_expression
+postfix_expression : postfix_expression '(' argument_expression_list ')'
+unary_expression : postfix_expression
+cast_expression : unary_expression
+cast_expression : '(' type_name ')' cast_expression
+multiplicative_expression : cast_expression
+additive_expression : multiplicative_expression
+shift_expression : additive_expression
+relational_expression : shift_expression
+equality_expression : relational_expression
+and_expression : equality_expression
+exclusive_or_expression : and_expression
+inclusive_or_expression : exclusive_or_expression
+logical_and_expression : inclusive_or_expression
+logical_or_expression : logical_and_expression
+conditional_expression : logical_or_expression
+assignment_expression : conditional_expression
+initializer : assignment_expression
+init_declarator : declarator '=' initializer
+init_declarator_list : init_declarator
+Line 25:
+declaration : declaration_specifiers init_declarator_list ';'
+declaration_list : declaration
+primary_expression : IDENTIFIER
+postfix_expression : primary_expression
+primary_expression : CONSTANT
+postfix_expression : primary_expression
+unary_expression : postfix_expression
+cast_expression : unary_expression
+multiplicative_expression : cast_expression
+additive_expression : multiplicative_expression
+shift_expression : additive_expression
+relational_expression : shift_expression
+equality_expression : relational_expression
+and_expression : equality_expression
+exclusive_or_expression : and_expression
+inclusive_or_expression : exclusive_or_expression
+logical_and_expression : inclusive_or_expression
+logical_or_expression : logical_and_expression
+conditional_expression : logical_or_expression
+assignment_expression : conditional_expression
+expression : assignment_expression
+postfix_expression : postfix_expression '[' expression ']'
+unary_expression : postfix_expression
+assignment_operator : '='
+primary_expression : CONSTANT
+postfix_expression : primary_expression
+unary_expression : postfix_expression
+cast_expression : unary_expression
+multiplicative_expression : cast_expression
+additive_expression : multiplicative_expression
+shift_expression : additive_expression
+relational_expression : shift_expression
+equality_expression : relational_expression
+and_expression : equality_expression
+exclusive_or_expression : and_expression
+inclusive_or_expression : exclusive_or_expression
+logical_and_expression : inclusive_or_expression
+logical_or_expression : logical_and_expression
+conditional_expression : logical_or_expression
+assignment_expression : conditional_expression
+assignment_expression : unary_expression assignment_operator assignment_expression
+expression : assignment_expression
+Line 26:
+expression_statement : expression ';'
+statement : expression_statement
+statement_list : statement
+primary_expression : IDENTIFIER
+postfix_expression : primary_expression
+primary_expression : CONSTANT
+postfix_expression : primary_expression
+unary_expression : postfix_expression
+cast_expression : unary_expression
+multiplicative_expression : cast_expression
+additive_expression : multiplicative_expression
+shift_expression : additive_expression
+relational_expression : shift_expression
+equality_expression : relational_expression
+and_expression : equality_expression
+exclusive_or_expression : and_expression
+inclusive_or_expression : exclusive_or_expression
+logical_and_expression : inclusive_or_expression
+logical_or_expression : logical_and_expression
+conditional_expression : logical_or_expression
+assignment_expression : conditional_expression
+expression : assignment_expression
+postfix_expression : postfix_expression '[' expression ']'
+unary_expression : postfix_expression
+assignment_operator : '='
+primary_expression : CONSTANT
+postfix_expression : primary_expression
+unary_expression : postfix_expression
+cast_expression : unary_expression
+multiplicative_expression : cast_expression
+additive_expression : multiplicative_expression
+shift_expression : additive_expression
+relational_expression : shift_expression
+equality_expression : relational_expression
+and_expression : equality_expression
+exclusive_or_expression : and_expression
+inclusive_or_expression : exclusive_or_expression
+logical_and_expression : inclusive_or_expression
+logical_or_expression : logical_and_expression
+conditional_expression : logical_or_expression
+assignment_expression : conditional_expression
+assignment_expression : unary_expression assignment_operator assignment_expression
+expression : assignment_expression
+Line 27:
+expression_statement : expression ';'
+statement : expression_statement
+statement_list : statement_list statement
+primary_expression : IDENTIFIER
+postfix_expression : primary_expression
+unary_expression : postfix_expression
+assignment_operator : '='
+primary_expression : CONSTANT
+postfix_expression : primary_expression
+unary_expression : postfix_expression
+cast_expression : unary_expression
+multiplicative_expression : cast_expression
+additive_expression : multiplicative_expression
+shift_expression : additive_expression
+relational_expression : shift_expression
+equality_expression : relational_expression
+and_expression : equality_expression
+exclusive_or_expression : and_expression
+inclusive_or_expression : exclusive_or_expression
+logical_and_expression : inclusive_or_expression
+logical_or_expression : logical_and_expression
+conditional_expression : logical_or_expression
+assignment_expression : conditional_expression
+assignment_expression : unary_expression assignment_operator assignment_expression
+expression : assignment_expression
+Line 28:
+expression_statement : expression ';'
+statement : expression_statement
+statement_list : statement_list statement
+primary_expression : IDENTIFIER
+postfix_expression : primary_expression
+unary_operator : '&'
+primary_expression : IDENTIFIER
+postfix_expression : primary_expression
+unary_expression : postfix_expression
+cast_expression : unary_expression
+unary_expression : unary_operator cast_expression
+cast_expression : unary_expression
+multiplicative_expression : cast_expression
+additive_expression : multiplicative_expression
+shift_expression : additive_expression
+relational_expression : shift_expression
+equality_expression : relational_expression
+and_expression : equality_expression
+exclusive_or_expression : and_expression
+inclusive_or_expression : exclusive_or_expression
+logical_and_expression : inclusive_or_expression
+logical_or_expression : logical_and_expression
+conditional_expression : logical_or_expression
+assignment_expression : conditional_expression
+argument_expression_list : assignment_expression
+primary_expression : CONSTANT
+postfix_expression : primary_expression
+unary_expression : postfix_expression
+cast_expression : unary_expression
+multiplicative_expression : cast_expression
+additive_expression : multiplicative_expression
+shift_expression : additive_expression
+relational_expression : shift_expression
+equality_expression : relational_expression
+and_expression : equality_expression
+exclusive_or_expression : and_expression
+inclusive_or_expression : exclusive_or_expression
+logical_and_expression : inclusive_or_expression
+logical_or_expression : logical_and_expression
+conditional_expression : logical_or_expression
+assignment_expression : conditional_expression
+argument_expression_list : argument_expression_list ',' assignment_expression
+postfix_expression : postfix_expression '(' argument_expression_list ')'
+unary_expression : postfix_expression
+cast_expression : unary_expression
+multiplicative_expression : cast_expression
+additive_expression : multiplicative_expression
+shift_expression : additive_expression
+relational_expression : shift_expression
+equality_expression : relational_expression
+and_expression : equality_expression
+exclusive_or_expression : and_expression
+inclusive_or_expression : exclusive_or_expression
+logical_and_expression : inclusive_or_expression
+logical_or_expression : logical_and_expression
+conditional_expression : logical_or_expression
+assignment_expression : conditional_expression
+expression : assignment_expression
+Line 29:
+expression_statement : expression ';'
+statement : expression_statement
+statement_list : statement_list statement
+primary_expression : IDENTIFIER
+postfix_expression : primary_expression
+unary_operator : '&'
+primary_expression : IDENTIFIER
+postfix_expression : primary_expression
+unary_expression : postfix_expression
+cast_expression : unary_expression
+unary_expression : unary_operator cast_expression
+cast_expression : unary_expression
+multiplicative_expression : cast_expression
+additive_expression : multiplicative_expression
+shift_expression : additive_expression
+relational_expression : shift_expression
+equality_expression : relational_expression
+and_expression : equality_expression
+exclusive_or_expression : and_expression
+inclusive_or_expression : exclusive_or_expression
+logical_and_expression : inclusive_or_expression
+logical_or_expression : logical_and_expression
+conditional_expression : logical_or_expression
+assignment_expression : conditional_expression
+argument_expression_list : assignment_expression
+primary_expression : CONSTANT
+postfix_expression : primary_expression
+unary_expression : postfix_expression
+cast_expression : unary_expression
+multiplicative_expression : cast_expression
+additive_expression : multiplicative_expression
+shift_expression : additive_expression
+relational_expression : shift_expression
+equality_expression : relational_expression
+and_expression : equality_expression
+exclusive_or_expression : and_expression
+inclusive_or_expression : exclusive_or_expression
+logical_and_expression : inclusive_or_expression
+logical_or_expression : logical_and_expression
+conditional_expression : logical_or_expression
+assignment_expression : conditional_expression
+argument_expression_list : argument_expression_list ',' assignment_expression
+postfix_expression : postfix_expression '(' argument_expression_list ')'
+unary_expression : postfix_expression
+cast_expression : unary_expression
+multiplicative_expression : cast_expression
+additive_expression : multiplicative_expression
+shift_expression : additive_expression
+relational_expression : shift_expression
+equality_expression : relational_expression
+and_expression : equality_expression
+exclusive_or_expression : and_expression
+inclusive_or_expression : exclusive_or_expression
+logical_and_expression : inclusive_or_expression
+logical_or_expression : logical_and_expression
+conditional_expression : logical_or_expression
+assignment_expression : conditional_expression
+expression : assignment_expression
+Line 30:
+expression_statement : expression ';'
+statement : expression_statement
+statement_list : statement_list statement
+primary_expression : IDENTIFIER
+postfix_expression : primary_expression
+unary_operator : '&'
+primary_expression : IDENTIFIER
+postfix_expression : primary_expression
+unary_expression : postfix_expression
+cast_expression : unary_expression
+unary_expression : unary_operator cast_expression
+cast_expression : unary_expression
+multiplicative_expression : cast_expression
+additive_expression : multiplicative_expression
+shift_expression : additive_expression
+relational_expression : shift_expression
+equality_expression : relational_expression
+and_expression : equality_expression
+exclusive_or_expression : and_expression
+inclusive_or_expression : exclusive_or_expression
+logical_and_expression : inclusive_or_expression
+logical_or_expression : logical_and_expression
+conditional_expression : logical_or_expression
+assignment_expression : conditional_expression
+argument_expression_list : assignment_expression
+primary_expression : CONSTANT
+postfix_expression : primary_expression
+unary_expression : postfix_expression
+cast_expression : unary_expression
+multiplicative_expression : cast_expression
+additive_expression : multiplicative_expression
+shift_expression : additive_expression
+relational_expression : shift_expression
+equality_expression : relational_expression
+and_expression : equality_expression
+exclusive_or_expression : and_expression
+inclusive_or_expression : exclusive_or_expression
+logical_and_expression : inclusive_or_expression
+logical_or_expression : logical_and_expression
+conditional_expression : logical_or_expression
+assignment_expression : conditional_expression
+argument_expression_list : argument_expression_list ',' assignment_expression
+postfix_expression : postfix_expression '(' argument_expression_list ')'
+unary_expression : postfix_expression
+cast_expression : unary_expression
+multiplicative_expression : cast_expression
+additive_expression : multiplicative_expression
+shift_expression : additive_expression
+relational_expression : shift_expression
+equality_expression : relational_expression
+and_expression : equality_expression
+exclusive_or_expression : and_expression
+inclusive_or_expression : exclusive_or_expression
+logical_and_expression : inclusive_or_expression
+logical_or_expression : logical_and_expression
+conditional_expression : logical_or_expression
+assignment_expression : conditional_expression
+expression : assignment_expression
+Line 31:
+expression_statement : expression ';'
+statement : expression_statement
+statement_list : statement_list statement
+primary_expression : IDENTIFIER
+postfix_expression : primary_expression
+primary_expression : STRING_LITERAL
+postfix_expression : primary_expression
+unary_expression : postfix_expression
+cast_expression : unary_expression
+multiplicative_expression : cast_expression
+additive_expression : multiplicative_expression
+shift_expression : additive_expression
+relational_expression : shift_expression
+equality_expression : relational_expression
+and_expression : equality_expression
+exclusive_or_expression : and_expression
+inclusive_or_expression : exclusive_or_expression
+logical_and_expression : inclusive_or_expression
+logical_or_expression : logical_and_expression
+conditional_expression : logical_or_expression
+assignment_expression : conditional_expression
+argument_expression_list : assignment_expression
+primary_expression : IDENTIFIER
+postfix_expression : primary_expression
+unary_expression : postfix_expression
+cast_expression : unary_expression
+multiplicative_expression : cast_expression
+additive_expression : multiplicative_expression
+shift_expression : additive_expression
+relational_expression : shift_expression
+equality_expression : relational_expression
+and_expression : equality_expression
+exclusive_or_expression : and_expression
+inclusive_or_expression : exclusive_or_expression
+logical_and_expression : inclusive_or_expression
+logical_or_expression : logical_and_expression
+conditional_expression : logical_or_expression
+assignment_expression : conditional_expression
+argument_expression_list : argument_expression_list ',' assignment_expression
+postfix_expression : postfix_expression '(' argument_expression_list ')'
+unary_expression : postfix_expression
+cast_expression : unary_expression
+multiplicative_expression : cast_expression
+additive_expression : multiplicative_expression
+shift_expression : additive_expression
+relational_expression : shift_expression
+equality_expression : relational_expression
+and_expression : equality_expression
+exclusive_or_expression : and_expression
+inclusive_or_expression : exclusive_or_expression
+logical_and_expression : inclusive_or_expression
+logical_or_expression : logical_and_expression
+conditional_expression : logical_or_expression
+assignment_expression : conditional_expression
+expression : assignment_expression
+Line 32:
+expression_statement : expression ';'
+statement : expression_statement
+statement_list : statement_list statement
+primary_expression : IDENTIFIER
+postfix_expression : primary_expression
+postfix_expression : postfix_expression '(' ')'
+unary_expression : postfix_expression
+cast_expression : unary_expression
+multiplicative_expression : cast_expression
+additive_expression : multiplicative_expression
+shift_expression : additive_expression
+relational_expression : shift_expression
+equality_expression : relational_expression
+and_expression : equality_expression
+exclusive_or_expression : and_expression
+inclusive_or_expression : exclusive_or_expression
+logical_and_expression : inclusive_or_expression
+logical_or_expression : logical_and_expression
+conditional_expression : logical_or_expression
+assignment_expression : conditional_expression
+expression : assignment_expression
+Line 33:
+expression_statement : expression ';'
+statement : expression_statement
+statement_list : statement_list statement
+primary_expression : CONSTANT
+postfix_expression : primary_expression
+unary_expression : postfix_expression
+cast_expression : unary_expression
+multiplicative_expression : cast_expression
+additive_expression : multiplicative_expression
+shift_expression : additive_expression
+relational_expression : shift_expression
+equality_expression : relational_expression
+and_expression : equality_expression
+exclusive_or_expression : and_expression
+inclusive_or_expression : exclusive_or_expression
+logical_and_expression : inclusive_or_expression
+logical_or_expression : logical_and_expression
+conditional_expression : logical_or_expression
+assignment_expression : conditional_expression
+expression : assignment_expression
+Line 34:
+jump_statement : RETURN expression ';'
+statement : jump_statement
+statement_list : statement_list statement
+compound_statement : '{' declaration_list statement_list '}'
+function_definition : declaration_specifiers declarator compound_statement
+external_declaration : function_definition
+translation_unit : translation_unit external_declaration

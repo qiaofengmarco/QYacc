@@ -1,0 +1,64 @@
+//define some constants
+#ifndef YTAB_H
+#define YTAB_H
+
+#define AUTO            130
+#define BREAK           131
+#define CASE            132
+#define CHAR            133
+#define CONST           134
+#define CONTINUE        135
+#define DEFAULT         136
+#define DO              137
+#define DOUBLE          138
+#define ELSE            139
+#define ENUM            140
+#define EXTERN          141
+#define FLOAT           142
+#define FOR             143
+#define GOTO            144
+#define IF              145
+#define INT             146
+#define LONG            147
+#define REGISTER        148
+#define RETURN          149
+#define SHORT           150
+#define SIGNED          151
+#define SIZEOF          152
+#define STATIC          153
+#define STRUCT          154
+#define SWITCH          155
+#define TYPEDEF         156
+#define UNION           157
+#define UNSIGNED        158
+#define VOID            159
+#define VOLATILE        160
+#define WHILE           161
+#define CONSTANT        162
+#define STRING_LITERAL  163
+#define ELLIPSIS        164
+#define RIGHT_ASSIGN    165
+#define LEFT_ASSIGN     166
+#define ADD_ASSIGN      167
+#define SUB_ASSIGN      168
+#define MUL_ASSIGN      169
+#define DIV_ASSIGN      170
+#define MOD_ASSIGN      171
+#define AND_ASSIGN      172
+#define XOR_ASSIGN      173
+#define OR_ASSIGN       174
+#define RIGHT_OP        175
+#define LEFT_OP         176
+#define INC_OP          177
+#define DEC_OP          178
+#define PTR_OP          179
+#define AND_OP          180
+#define OR_OP           181
+#define LE_OP           182
+#define GE_OP           183
+#define EQ_OP           184
+#define NE_OP           185
+#define IDENTIFIER      186
+#define TYPE_NAME      	187
+
+#endif
